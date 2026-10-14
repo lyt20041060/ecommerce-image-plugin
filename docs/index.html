@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="商品图片提取助手：在电商页面一键提取图片，预览筛选并批量保存为 PNG。下载 Chrome 插件并查看安装教程。">
+  <meta name="theme-color" content="#1755dc">
+  <title>商品图片提取助手 · 从商品页面到你的素材库</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#intro"><img src="assets/logo.svg" width="34" height="34" alt=""><span>商品图片提取助手</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>菜单</button>
+      <nav id="navigation" aria-label="主导航">
+        <a href="#intro">产品介绍</a><a href="#features">核心功能</a><a href="#install">安装教程</a><a class="nav-download" href="#download">下载插件 <span aria-hidden="true">↓</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="intro">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="availability"><span aria-hidden="true"></span>适用于 Chrome 浏览器的图片工具</p>
+          <h1>商品图片提取助手</h1>
+          <p class="hero-title">好图片，<br>从页面到素材库。</p>
+          <p class="hero-description">打开商品详情，一键获取图片。预览、勾选、批量保存为 PNG，把重复的图片整理工作交给插件。</p>
+          <div class="hero-actions"><a class="button primary" href="assets/product-image-helper-v1.0.0.zip" download>下载插件 <span aria-hidden="true">↓</span></a><a class="text-link" href="#install">查看安装教程 <span aria-hidden="true">↗</span></a></div>
+          <p class="download-caption">v1.0.0 · ZIP 压缩包 · 解压后加载安装</p>
+          <div class="hero-facts"><span>本地处理</span><span>无需后端</span><span>原生 PNG 输出</span></div>
+        </div>
+        <figure class="demo-figure">
+          <div class="demo-window">
+            <div class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>商品图片 · 提取助手</span><span class="demo-tag">界面示意</span></div>
+            <div class="demo-top"><div><span class="demo-heading">无线耳机 · 商品图片</span><p>先看清，再选择。</p></div><span class="png-mark">PNG</span></div>
+            <div class="demo-tools"><div><button id="demo-all" type="button">全选</button><button id="demo-invert" type="button">反选</button></div><span id="demo-count" aria-live="polite">已选 2 张</span></div>
+            <div class="demo-grid">
+              <label class="demo-card selected"><span class="product-shot shot-blue"><img src="assets/headphones.svg" width="220" height="220" alt="蓝色背景上的耳机插画"></span><span class="demo-card-bottom"><input type="checkbox" checked><span>图片 001<small>800 × 800</small></span></span></label>
+              <label class="demo-card selected"><span class="product-shot shot-ice"><img src="assets/headphones.svg" width="220" height="220" alt="浅蓝背景上的耳机插画"></span><span class="demo-card-bottom"><input type="checkbox" checked><span>图片 002<small>1200 × 1200</small></span></span></label>
+              <label class="demo-card"><span class="product-shot shot-slate"><img src="assets/headphones.svg" width="220" height="220" alt="深蓝背景上的耳机插画"></span><span class="demo-card-bottom"><input type="checkbox"><span>图片 003<small>800 × 1000</small></span></span></label>
+            </div>
+            <div class="demo-bottom"><span class="demo-check" aria-hidden="true">✓</span><span>选择图片后，插件按顺序保存为 PNG</span></div>
+          </div>
+          <figcaption>交互示意：试试全选、反选或勾选图片。插画与尺寸为演示内容。</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="platforms container" aria-labelledby="platform-title">
+      <div><h2 id="platform-title">为电商图片整理而设计</h2><p>支持平台与当前验证状态</p></div>
+      <ul class="platform-list"><li><span class="platform-icon taobao" aria-hidden="true">淘</span><span><strong>淘宝</strong><small>已适配采集，待实测</small></span></li><li><span class="platform-icon jd" aria-hidden="true">京</span><span><strong>京东</strong><small class="verified">提取 / 预览 / PNG 下载已实测</small></span></li><li><span class="platform-icon pdd" aria-hidden="true">拼</span><span><strong>拼多多商家版</strong><small>已适配采集，待实测</small></span></li></ul>
+    </section>
+    <section class="features section container" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><p class="section-kicker">从提取到下载</p><h2 id="features-title">一套顺手的图片工作流</h2></div><p>少一些重复点击，<br>多一些对素材的掌控。</p></div>
+      <div class="feature-layout">
+        <article class="feature-main"><span class="feature-icon" aria-hidden="true">↓</span><h3>一键提取商品图片</h3><p>点击详情页右下角「获取图片」，集中查看普通图片、已进入页面的懒加载图片和 CSS 背景图片。</p><div class="extract-flow"><span>商品页面</span><span aria-hidden="true">→</span><span class="mini-floating">获取图片</span><span aria-hidden="true">→</span><span>图片图库</span></div><small>先展开详情并滚动加载，再提取更完整。</small></article>
+        <div class="feature-list">
+          <article><span class="feature-icon" aria-hidden="true">⌁</span><div><h3>智能过滤</h3><p>自动去重，过滤疑似图标、Logo、占位图和小尺寸图片，让候选素材更清晰。</p></div></article>
+          <article><span class="feature-icon" aria-hidden="true">⊞</span><div><h3>图片预览</h3><p>新标签页展示图片与尺寸，点击查看大图，下载之前先确认。</p></div></article>
+          <article><span class="feature-icon" aria-hidden="true">✓</span><div><h3>自由勾选</h3><p>单张选择、全选或反选，实时查看选中数量，只保存需要的素材。</p></div></article>
+          <article><span class="feature-icon" aria-hidden="true">⇩</span><div><h3>批量 PNG 下载</h3><p>统一转换为 PNG，按「商品图_001.png」编号；显示下载进度和失败详情。</p></div></article>
+        </div>
+      </div>
+      <p class="feature-note">整页提取可能包含推荐商品，请预览后筛选。需要登录或受防盗链限制的图片可能无法转换，插件会提示失败原因。</p>
+    </section>
+    <section class="install-section" id="install" aria-labelledby="install-title">
+      <div class="container section">
+        <div class="section-heading"><div><p class="section-kicker">开始使用</p><h2 id="install-title">四步，把助手装进 Chrome</h2></div><p>无需构建，无需注册。<br>下载、解压，然后加载。</p></div>
+        <ol class="install-steps">
+          <li><span class="step-number">01</span><h3>下载并解压插件</h3><p>下载本页的 ZIP 压缩包，解压到固定文件夹。确认文件夹内包含 manifest.json。</p><a href="assets/product-image-helper-v1.0.0.zip" download>下载 v1.0.0 <span aria-hidden="true">↓</span></a></li>
+          <li><span class="step-number">02</span><h3>打开扩展管理页面</h3><p>把下面的地址粘贴到 Chrome 地址栏，然后按 Enter。</p><div class="copy-field"><code id="extensions-address">chrome://extensions/</code><button id="copy-address" type="button" hidden>复制</button></div><p id="copy-status" class="copy-status" role="status"></p></li>
+          <li><span class="step-number">03</span><h3>开启开发者模式</h3><p>在扩展管理页面右上角打开「开发者模式」，显示本地加载选项。</p><div class="mode-example" aria-label="开发者模式开启状态示意"><span>开发者模式</span><span class="toggle-illustration" aria-hidden="true"></span></div></li>
+          <li><span class="step-number">04</span><h3>加载已解压的扩展程序</h3><p>点击同名按钮，选择解压后包含 manifest.json 的文件夹。刷新商品页面即可开始。</p><span class="load-example">加载已解压的扩展程序</span></li>
+        </ol>
+        <div class="install-tip"><strong>安装后怎么用？</strong><p>正常登录商品页面 → 展开并滚动详情 → 点击「获取图片」→ 预览勾选 → 下载 PNG。下载时请保持图库标签页打开。</p></div>
+      </div>
+    </section>
+    <section class="container section" id="download" aria-labelledby="download-title">
+      <div class="download-panel"><div><p class="section-kicker">准备好整理下一组商品图片了吗？</p><h2 id="download-title">让好素材，随手可得。</h2><p>商品图片提取助手 v1.0.0<br>Chrome 插件 ZIP 包 · 本地加载安装 · 未上架 Chrome 应用商店</p></div><div class="download-action"><a class="button light" href="assets/product-image-helper-v1.0.0.zip" download>下载插件 ZIP <span aria-hidden="true">↓</span></a><a href="#install">第一次安装？查看四步教程</a></div></div>
+    </section>
+  </main>
+  <footer class="container site-footer"><div><a class="brand" href="#intro"><img src="assets/logo.svg" width="28" height="28" alt=""><span>商品图片提取助手</span></a><p>图片在本地处理，不上传至后端服务器。</p></div><div class="github-area"><strong>GitHub 项目地址</strong><p>仓库地址待补充</p><small>确认真实仓库地址后，将在此提供链接。</small></div><p class="footer-note">独立开发的浏览器工具，与上述电商平台无隶属关系。</p></footer>
+</body>
+</html>

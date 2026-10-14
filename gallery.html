@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>商品图片 · 提取助手</title><link rel="stylesheet" href="gallery.css"></head>
+<body>
+  <header><div class="brand">商品图片<span>提取助手</span></div><p>筛选好图片，一次保存为 PNG</p></header>
+  <main>
+    <div class="intro"><h1 id="title">正在读取商品…</h1><a id="source" target="_blank" rel="noopener noreferrer" hidden>返回商品页面</a></div>
+    <p class="hint">已过滤重复地址、图标及小尺寸图片。建议先滚动原页面加载完整详情，再重新提取。整页采集可能包含推荐商品，请预览后选择。</p>
+    <div class="toolbar"><div><button id="all">全选</button><button id="invert">反选</button><label><input id="small" type="checkbox"> 显示小尺寸图片</label></div><div><span id="count">已选 0 张</span><button id="download" class="primary" disabled>下载选中图片</button></div></div>
+    <section class="status" aria-live="polite"><p id="status">正在检查图片尺寸…</p><progress id="progress" value="0" max="1"></progress></section>
+    <p id="empty" hidden>未找到可用商品图片。请在原页面展开详情并滚动加载后，再点击「获取图片」。</p>
+    <div id="grid" class="grid"></div>
+    <details id="errors" hidden><summary>查看失败详情</summary><ul id="error-list"></ul></details>
+  </main>
+  <dialog id="preview"><button id="close-preview" aria-label="关闭预览">关闭</button><img id="preview-image" alt="商品图片大图预览"></dialog>
+  <script src="shared.js"></script><script src="gallery.js"></script>
+</body></html>

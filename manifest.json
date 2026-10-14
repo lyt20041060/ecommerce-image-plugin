@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "商品图片提取助手",
+  "version": "1.0.0",
+  "description": "提取淘宝、京东及拼多多商家页面的商品图片，预览筛选并批量保存为 PNG。",
+  "minimum_chrome_version": "102",
+  "permissions": ["downloads", "storage"],
+  "host_permissions": ["https://*.taobao.com/*", "https://*.tmall.com/*", "https://*.jd.com/*", "https://*.pinduoduo.com/*", "https://*.yangkeduo.com/*", "https://*.alicdn.com/*", "https://*.360buyimg.com/*", "https://*.jdimg.com/*", "https://*.pddpic.com/*", "https://*.pinduoduoimg.com/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{
+    "matches": ["https://*.taobao.com/*", "https://*.tmall.com/*", "https://*.jd.com/*", "https://*.pinduoduo.com/*", "https://*.yangkeduo.com/*"],
+    "js": ["shared.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }],
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'self'; base-uri 'none'"}
+}

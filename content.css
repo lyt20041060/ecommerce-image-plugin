@@ -1,0 +1,3 @@
+#product-image-extractor { position: fixed !important; right: 24px !important; bottom: 28px !important; z-index: 2147483647 !important; border: 0 !important; border-radius: 12px !important; padding: 15px 22px !important; background: #173f8a !important; color: white !important; font: 600 15px/1.4 "Microsoft YaHei", sans-serif !important; box-shadow: 0 4px 18px #173f8a40 !important; cursor: pointer !important; }
+#product-image-extractor:focus-visible { outline: 3px solid #55b8ff !important; outline-offset: 4px !important; }
+#product-image-extractor:disabled { opacity: .7 !important; cursor: wait !important; }
